@@ -1,0 +1,31 @@
+.main {
+  background-color: #32297e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 90px);
+
+  a {
+    color: #e9eae5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      bottom: 0px;
+      left: 0px;
+      height: 3px;
+      background-color: #e9eae5;
+      transition: width 200ms ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

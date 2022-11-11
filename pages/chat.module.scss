@@ -1,0 +1,45 @@
+.main {
+  background-color: #32297e;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatbox {
+  background-color: #e9eae5;
+  width: 500px;
+  height: calc(500px * 1.3);
+  border-radius: 10px;
+  overflow: hidden;
+  resize: both;
+
+  h1 {
+    width: 100%;
+    color: #32297e;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #32297e;
+      width: 70%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+    }
+  }
+}
+
+.back {
+  position: absolute;
+  bottom: 1rem;
+  a {
+    color: #e9eae5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
